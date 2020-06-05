@@ -27,7 +27,7 @@ activity <- Y$activity
 # Appropriately labels the data set with descriptive variable names
 colnames(X) <- features[features_selected[,1],2]
 
-# From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+# From the data set in step 4.
 colnames(sub_all) <- "subject"
 #subject=sub_all$subject
 combine <- cbind(X, activity, sub_all)
